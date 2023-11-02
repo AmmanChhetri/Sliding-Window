@@ -80,7 +80,7 @@ We will solve the problem using these 4 points...in the order... :-
 */
 
 
-// This problem uses monotonic increasing deque...similary we can have monotonic increasing/decreasing queue or stack or deque....
+// This problem uses monotonic decreasing deque...similary we can have monotonic increasing/decreasing queue or stack or deque....
 
 class Solution {
 public:
@@ -123,7 +123,7 @@ public:
 
 
 
-// if we wnat to create a monotonic increasing deque...then just change the sign from step 2 as following-
+//If we want to create a monotonic increasing deque...then just change the sign from step 2 as follows-
 
         // while(!dq.empty() && nums[dq.back()] < nums[i] ) {
         //     dq.pop_back();
@@ -144,7 +144,7 @@ public:
 
 
 // The concept is same as previous...here in the priority queue we are storing both value and index....
-//now whenver we encounter a element we dont need to delete the elements from priority queue...because as priority queue(maxheap) always store elements in descending order...we just have to make sure that the top element is not out of window....
+//now whenever we encounter a element we dont need to delete the elements from priority queue...because as priority queue(maxheap) always store elements in descending order...we just have to make sure that the top element is not out of window....
 
 
 // dry run this code....with this example you will understand it completely...
